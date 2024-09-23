@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .menu-item:hover {
+            transform: scale(1.05); /* 5% larger */
+            transition: transform 0.3s ease-in-out; /* smooth transition */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header -->
+    <header class="bg-white p-8 shadow-lg text-center sticky top-0 z-50">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">Welcome to Our Restaurant</h1>
+            <p class="text-gray-600 mt-2">Serving deliciousness since 1990</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-8 px-4">
+        <!-- Section: Appetizers -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">Appetizers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Appetizer Item 1 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Bruschetta</h3>
+                    <p class="text-gray-700">$8.00</p>
+                    <p class="text-gray-600 mt-2">Grilled bread topped with garlic, tomatoes, and basil.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+                <!-- Appetizer Item 2 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Calamari</h3>
+                    <p class="text-gray-700">$12.00</p>
+                    <p class="text-gray-600 mt-2">Crispy fried squid served with marinara sauce.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+                <!-- Appetizer Item 3 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Stuffed Mushrooms</h3>
+                    <p class="text-gray-700">$10.00</p>
+                    <p class="text-gray-600 mt-2">Mushrooms filled with cheese and herbs, baked to perfection.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Main Courses -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-4">Main Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Main Course Item 1 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Grilled Salmon</h3>
+                    <p class="text-gray-700">$22.00</p>
+                    <p class="text-gray-600 mt-2">Fresh salmon fillet grilled to perfection, served with vegetables.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+                <!-- Main Course Item 2 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Steak Frites</h3>
+                    <p class="text-gray-700">$28.00</p>
+                    <p class="text-gray-600 mt-2">Juicy steak served with crispy French fries and peppercorn sauce.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+                <!-- Main Course Item 3 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Pasta Carbonara</h3>
+                    <p class="text-gray-700">$18.00</p>
+                    <p class="text-gray-600 mt-2">Classic Italian pasta with pancetta, egg, and Parmesan cheese.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Desserts -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Desserts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Dessert Item 1 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Tiramisu</h3>
+                    <p class="text-gray-700">$8.00</p>
+                    <p class="text-gray-600 mt-2">Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+                <!-- Dessert Item 2 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Chocolate Fondant</h3>
+                    <p class="text-gray-700">$9.00</p>
+                    <p class="text-gray-600 mt-2">Warm molten chocolate cake served with vanilla ice cream.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+                <!-- Dessert Item 3 -->
+                <div class="menu-item bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Cheesecake</h3>
+                    <p class="text-gray-700">$7.00</p>
+                    <p class="text-gray-600 mt-2">Creamy New York-style cheesecake with a graham cracker crust.</p>
+                    <div class="mt-4 flex justify-between items-center">
+                        <a href="#" class="text-blue-500 hover:underline">Details</a>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+        <p>&copy; 2023 Our Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

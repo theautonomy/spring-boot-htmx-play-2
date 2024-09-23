@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Post List</title>
+</head>
+<body>
+    <div th:fragment="postList">
+        <ul>
+            <li th:each="post : ${posts}" class="mb-4">
+                <div class="bg-gray-100 rounded p-4">
+                    <p th:text="${post.caption}" class="text-lg font-semibold mb-2"></p>
+                    <p th:text="${post.user.username}" class="text-gray-600"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
